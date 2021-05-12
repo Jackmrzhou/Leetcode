@@ -1,0 +1,11 @@
+object Solution {
+    def fizzBuzz(n: Int): List[String] = {
+      val res = for (i <- 1 to n) yield {
+        if (i % 3 == 0 && i % 5 ==0) "FizzBuzz"
+        else if (i % 3 == 0) "Fizz"
+        else if (i % 5 == 0) "Buzz"
+        else i.toString()
+      }
+      res.toIndexedSeq.toList
+    }
+}
